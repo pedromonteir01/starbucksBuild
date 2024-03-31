@@ -8,8 +8,15 @@ export default function TabRoutes() {
     const Tab = createBottomTabNavigator();
 
     return(
-        <Tab.Navigator>
-            <Tab.Screen name="Home" component={Home}/>
+        <Tab.Navigator screenOptions={{ headerShown: false }}>
+            <Tab.Screen 
+                name="Home" 
+                component={Home}
+                options={{
+                    tabBarLabel: 'Home',
+                    tabBarActiveTintColor: "#131313",
+                    tabBarInactiveTintColor: "#D6D6D6",
+                }}/>
         </Tab.Navigator>
     );
 }
