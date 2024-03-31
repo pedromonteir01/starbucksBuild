@@ -1,8 +1,10 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
+//StackComponent
+import StackRoutes from "./stack.routes";
+
 //pages
 import Home from "../screens/Home";
-import Menu from "../screens/Menu";
 
 export default function TabRoutes() {
 
@@ -20,7 +22,7 @@ export default function TabRoutes() {
                 }} />
             <Tab.Screen
                 name="Menu"
-                component={Menu}
+                component={StackRoutes}
                 options={{
                     tabBarLabel: 'Home',
                     tabBarActiveTintColor: "#131313",
