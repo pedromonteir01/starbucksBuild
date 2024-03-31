@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import StackRoutes from "./stack.routes";
 
 //pages
-import Home from "../screens/Home";
+
 
 export default function TabRoutes() {
 
@@ -14,7 +14,7 @@ export default function TabRoutes() {
         <Tab.Navigator screenOptions={{ headerShown: false }}>
             <Tab.Screen
                 name="Home"
-                component={Home}
+                component={StackRoutes}
                 options={{
                     tabBarLabel: 'Home',
                     tabBarActiveTintColor: "#131313",
@@ -24,7 +24,7 @@ export default function TabRoutes() {
                 name="Menu"
                 component={StackRoutes}
                 options={{
-                    tabBarLabel: 'Home',
+                    tabBarLabel: 'Menu',
                     tabBarActiveTintColor: "#131313",
                     tabBarInactiveTintColor: "#D6D6D6",
                 }} />
