@@ -8,7 +8,7 @@ const TouchButton = ({ title, route, data }) => {
 
     return(
         <>
-            <TouchableOpacity onPress={navigation.navigate(route, {data: data})}> 
+            <TouchableOpacity onPress={() => navigation.navigate(route, {data: data})}> 
                 <Text>
                     {title}
                 </Text>
